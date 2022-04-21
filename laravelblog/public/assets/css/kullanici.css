@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Odia:wght@300&family=Open+Sans&display=swap');
+
+body{
+    font-family: 'Anek Odia', sans-serif;
+    background-color: #F9F7F7;  
+}
+.menu{
+ color: #112D4E;   
+}
+.menu .nav-link:hover{
+    color: #FF6B6B;   
+}
+
+.bg-c{
+    background-color: #525E75;
+}
+.txt-c{
+    color: #F1DDBF;
+}
+.link-c{
+    color: #7882A4;
+}
+
+textarea {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    width: 100%;
+}
