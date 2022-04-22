@@ -19,3 +19,7 @@ Route::get('/', function () {
 Route::get('/adminpanel',function(){
     return view('admin.adminpanel');
 });
+Route::get('/register',function(){
+    return view('auth.register');
+});
+

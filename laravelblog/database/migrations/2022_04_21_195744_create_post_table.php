@@ -14,13 +14,14 @@ return new class extends Migration
     public function up()
     {
         Schema::create('post', function (Blueprint $table) {
-            $table->increments('id');
+            $table->id();
             $table->string('title',255);
             $table->longText('content');
-            $table->integer('user_id')->unsigned();
-            $table->foreign('user_id')->references('id')->on('users');
-            $table->integer('category_id')->unsigned();
-            $table->foreign('category_id')->references('id')->on('category');
+            //$table->integer('user_id')->unsigned();
+           
+            $table->foreignId('category_id')->constrained('category')->onUpdate('cascade')
+            ->onDelete('restrict');
+           
             $table->timestamps();
         });
     }

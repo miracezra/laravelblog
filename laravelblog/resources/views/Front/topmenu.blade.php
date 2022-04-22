@@ -4,7 +4,7 @@
         <div class="container-fluid">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a href="/panel.html" target="_blank" class="nav-link fw-light"><i
+              <a href="register" target="_blank" class="nav-link fw-light"><i
                   class="bi bi-person-circle fs-4 me-2"></i>Kullanıcı Girisi</a>
             </li>
             <li class="nav-item">
