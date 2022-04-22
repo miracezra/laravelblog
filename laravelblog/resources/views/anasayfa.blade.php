@@ -8,11 +8,14 @@
   <link rel="stylesheet" href="{{asset('assets/css/bootstrap.min.css')}}" />
   <link rel="stylesheet" href="{{asset('assets/css/bootstrap.css')}}" />
   <link rel="stylesheet" href="{{asset('assets/css/style.css')}}" />
-  <title>mirac</title>               
+  <title>Anasayfa</title>               
 </head>
 <body class="d-flex h-100 flex-column">
   <!-- Top Menu -->
-  @include('Front.topmenu') 
+  <div class="container-fluid menu">
+    @include('Front.topmenu') 
+  </div>
+  
   <header>
     <!-- Nav -->
     @include('front.navbar')
@@ -32,7 +35,7 @@
     </div>
   </section>
 
-
+@include('front.pagenumber')
 
   <!--Footer-->
   @include('front.footer')

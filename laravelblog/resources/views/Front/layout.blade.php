@@ -8,36 +8,23 @@
   <link rel="stylesheet" href="{{asset('assets/css/bootstrap.min.css')}}" />
   <link rel="stylesheet" href="{{asset('assets/css/bootstrap.css')}}" />
   <link rel="stylesheet" href="{{asset('assets/css/style.css')}}" />
-  <title>mirac</title>               
+  @yield('css')
+  <title>@yield('title')</title>               
 </head>
 <body class="d-flex h-100 flex-column">
   <!-- Top Menu -->
-
-  <header>
-    <!-- Nav -->
-    
-  </header>
-  <main>
-
-    <!--  slider-->
-  </main>
-  <section>
-    <div class="container-fluid">
-      <div class="row">
-        <!--categories -->
-       
-        <!--cards -->
-
-      </div>
-    </div>
-  </section>
+@yield('content')
+  
+  
 
 
 
   <!--Footer-->
-  @include('front.footer')
+</body>
+
   <script src="{{ asset('assets/js/bootstrap.js') }}"></script>
   <script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}"></script>
-</body>
+  @yield('js')
+
 
 </html>
